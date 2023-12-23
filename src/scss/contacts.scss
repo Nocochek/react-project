@@ -1,0 +1,66 @@
+@import url('vars');
+
+.contasts{
+    h1{
+        font-size: var(--big-title);
+        font-weight: 700;
+        color: #333;
+    }
+
+
+
+    .Contacts-content{
+        display: flex;
+        .Contacts-2{
+            margin-left: 30px;
+
+            h3{
+                font-size: 36px;
+                font-weight: 700;
+                margin-bottom: 30px;
+             
+
+            }
+            h4{
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 5px;
+                margin-top: 25px;
+            }
+            p{
+                color: #525252;
+                margin-bottom: 10px;
+                width: 300px;
+            }
+        }
+    }
+}
+.oen-row{
+    display: flex;
+    align-items: center;
+    img{
+        width: 45px;
+        height: 45px;
+        margin-left: 15px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 420px) {
+    .contasts{
+        margin-top: 200px;
+    }
+    .Contacts-content{
+        flex-direction: column;
+    }
+    .contasts h1{
+        font-size: var(--font-32);
+    }
+    .map{
+        width: 380px;
+    }
+    .oen-row{
+        margin-bottom: 20px;
+    }
+}

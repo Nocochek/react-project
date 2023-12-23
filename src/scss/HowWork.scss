@@ -1,0 +1,83 @@
+@import url('vars');
+
+.HowWork {
+  margin-top: 50px;
+  h1 {
+    font-size: var(--big-title);
+    margin: 40px 0;
+    color: #333;
+  }
+  .HowWork-content {
+    display: flex;
+    .HowWork-item {
+      padding: 45px 40px;
+      border-radius: 25px;
+      background: #fff;
+
+      /* 1 */
+      box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.1);
+      h4 {
+        font-size: 45px;      
+        font-weight: 600;
+      }
+      h5 {
+        color: #929292;
+        font-size: 20px;
+        margin: 10px 0;
+      }
+    }
+  }
+  .HowWork-footer {
+    margin-top: 20px;
+    display: flex;
+    p {
+      width: 320px;
+      font-size: 16px;
+      color: #929292;
+    }
+    .cost {
+      color: #000;
+      font-size: var(--text);
+      font-weight: 500;
+    }
+    h6 {
+      font-size: 40px;
+    }
+  }
+}
+
+
+
+
+@media (max-width: 420px) {
+  .HowWork h1{
+    font-size: 38px;
+    width: 360px;
+    
+  }
+  .HowWork-content{
+    flex-direction: column;
+    width: 400px;
+    margin-left: -10px;
+  }
+  .HowWork .HowWork-content .HowWork-item h4{
+    font-size:28px;
+  }
+  .HowWork .HowWork-content .HowWork-item h5{
+    font-size: 24px;
+  }
+  .HowWork .HowWork-content .HowWork-item p{
+    font-size: 20px;
+  }
+  .HowWork-footer{
+    flex-direction: column;
+  }
+  .HowWork .HowWork-footer h6{
+    font-weight: 700;
+    font-size: 64px;
+  }
+  .HowWork .HowWork-content .HowWork-item{
+    padding: 25px 20px;
+  }
+
+}

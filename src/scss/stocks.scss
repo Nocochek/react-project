@@ -1,0 +1,61 @@
+@import url('vars');
+
+.stocks {
+  margin-top: 50px;
+  h1 {
+    font-size: var(--big-title);
+    color: #333;
+  }
+  .stocks-content {
+    .stocks-item {
+      border-radius: 25px;
+      background: #fff;
+      box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.1);
+      padding: 5px 20px;
+      margin-right: 45px;
+      p {
+        width: 309px;
+        font-size: 20px;
+        color: #525252;      
+        height: 120px;
+      }
+      button {
+        padding: 30px 55px;
+        border-radius: 25px;
+        background: linear-gradient(180deg, #fcdfa5 0%, #eec881 100%);
+        font-weight: 600;
+        font-size: 22px;
+        margin-top: 40px;
+      }
+    }
+    display: flex;
+    .stocks-item-header {
+      display: flex;
+      align-items: center;
+      h2 {
+        font-size: 32px;
+        font-weight: 600;
+        width: 270px;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+
+  .stocks h1{
+    font-size: var(--font-32);
+  }
+  .stocks-content{
+    flex-direction: column;
+    .stocks-item {
+      margin-top: 30px;
+    }
+  }
+  .stocks .stocks-content .stocks-item-header h2{
+    font-size: 25px;
+  }
+  .stocks .stocks-content .stocks-item button{
+    margin-left: 20px;
+  }
+}

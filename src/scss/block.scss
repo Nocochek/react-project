@@ -1,0 +1,60 @@
+@import url('vars');
+
+.block {
+  margin-top: 60px;
+  margin-bottom: 150px;
+  .BlockItem {
+    padding: 20px 30px;
+    border-radius: 25px;
+    background: #fff;
+    box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.1);
+    margin-right: 22px;
+    h3 {
+      font-size: 24px;
+      font-weight: 600;
+      width: 228px;
+      margin: 15px 0;
+    }
+    p {
+      width: 243px;
+      color: #615f5f;
+    }
+  }
+  h1 {
+    font-size: 40px;
+    width: 1033px;
+    color: #333;
+    font-weight: 700;
+  }
+}
+.block-content {
+  display: flex;
+  margin-top: 30px;
+}
+
+@media (max-width: 420px) {
+  .block h1 {
+    width: 322px;
+    font-weight: 700;
+    font-size: var(--font-32);
+  }
+  .block-content{
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .document{
+    display: none;
+  }
+  .BlockItem{
+    margin-top: 30px;
+    width: 390px;
+  }
+  .block .BlockItem h3{
+    width: 335px;
+    font-size: 28px;
+  }
+  .block .BlockItem p{
+    width: 335px;
+    font-size: 18px;
+  }
+}

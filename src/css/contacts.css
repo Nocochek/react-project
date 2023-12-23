@@ -1,0 +1,67 @@
+@import url("vars");
+.contasts h1 {
+  font-size: var(--big-title);
+  font-weight: 700;
+  color: #333;
+}
+.contasts .Contacts-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contasts .Contacts-content .Contacts-2 {
+  margin-left: 30px;
+}
+.contasts .Contacts-content .Contacts-2 h3 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.contasts .Contacts-content .Contacts-2 h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 25px;
+}
+.contasts .Contacts-content .Contacts-2 p {
+  color: #525252;
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.oen-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.oen-row img {
+  width: 45px;
+  height: 45px;
+  margin-left: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 420px) {
+  .contasts {
+    margin-top: 200px;
+  }
+  .Contacts-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contasts h1 {
+    font-size: var(--font-32);
+  }
+  .map {
+    width: 380px;
+  }
+  .oen-row {
+    margin-bottom: 20px;
+  }
+}
